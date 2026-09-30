@@ -297,7 +297,7 @@ export const PlannerTrainCard: React.FC<PlannerTrainCardProps> = ({ train, journ
             ) : totalFare !== null ? (
               <strong className="text-blue-900 font-extrabold text-lg">₹{totalFare.toLocaleString('en-IN')}</strong>
             ) : (
-              <span className="text-xs font-bold text-slate-600">Fare unavailable</span>
+              <span className="text-xs font-bold text-slate-600">{fareError || 'Fare unavailable'}</span>
             )}
 
             {fareBreakdown && (
