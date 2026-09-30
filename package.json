@@ -1,0 +1,28 @@
+{
+  "name": "smartrail-eta",
+  "version": "0.1.0",
+  "description": "GATIVERSE - AI-powered real-time railway platform",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev:backend": "npm --prefix backend run dev",
+    "build:frontend": "npm --prefix frontend run build",
+    "build:backend": "npm --prefix backend run build",
+    "lint:frontend": "npm --prefix frontend run lint",
+    "lint:backend": "npm --prefix backend run lint",
+    "lint": "npm run lint:frontend && npm run lint:backend",
+    "build": "npm run build:frontend && npm run build:backend"
+  },
+  "keywords": [
+    "railway",
+    "eta",
+    "tracking",
+    "monorepo"
+  ],
+  "author": "",
+  "license": "ISC"
+}

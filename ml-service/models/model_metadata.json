@@ -1,0 +1,25 @@
+{
+  "model_name": "GATIVERSE Dynamic Prediction Model",
+  "model_type": "XGBoost Regressor",
+  "model_version": "1.0.0-synthetic-demo",
+  "trained_at": "2026-09-28T01:58:49.633521Z",
+  "feature_columns": [
+    "current_delay_minutes",
+    "current_speed_kmph",
+    "distance_remaining_km",
+    "distance_travelled_km",
+    "stations_remaining",
+    "scheduled_remaining_minutes",
+    "elapsed_journey_minutes",
+    "previous_station_delay_minutes",
+    "average_station_dwell_minutes",
+    "hour_of_day",
+    "day_of_week"
+  ],
+  "metrics": {
+    "mae": 2.8702,
+    "rmse": 3.5882,
+    "r2_score": 0.6515
+  },
+  "dataset_notice": "DEMO / SYNTHETIC DATASET ONLY - NOT FOR REAL INDIAN RAILWAYS PRODUCTION DISPATCH"
+}

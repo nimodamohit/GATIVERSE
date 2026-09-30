@@ -1,0 +1,23 @@
+{
+  "activeModel": "synthetic-demo",
+  "models": [
+    {
+      "id": "synthetic-demo",
+      "source": "synthetic",
+      "name": "Synthetic Demo Model",
+      "version": "1.0.0",
+      "modelFile": "eta_model.pkl",
+      "metadataFile": "model_metadata.json",
+      "description": "Baseline XGBoost model trained on synthetic historical train delay patterns."
+    },
+    {
+      "id": "real-xgboost-v1",
+      "source": "real-railway-telemetry",
+      "name": "Real Railway Telemetry Model",
+      "version": "1.0.0",
+      "modelFile": "real_xgboost_eta.json",
+      "metadataFile": "real_model_metadata.json",
+      "description": "Production XGBoost model trained on validated historical RailRadar telemetry data."
+    }
+  ]
+}
